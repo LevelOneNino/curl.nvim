@@ -22,4 +22,4 @@ vim.treesitter.language.register("bash", "curl")
 --if bash_lang_installed then
 --	require("curl.treesitter").add_treesitter_highlighting()
 --	return
-end
+--end
