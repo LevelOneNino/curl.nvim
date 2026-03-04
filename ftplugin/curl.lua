@@ -18,8 +18,8 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
 })
 
 vim.treesitter.language.register("bash", "curl")
-local bash_lang_installed, _ = pcall(vim.treesitter.get_parser, 0, "bash")
-if bash_lang_installed then
-	require("curl.treesitter").add_treesitter_highlighting()
-	return
+--local bash_lang_installed, _ = pcall(vim.treesitter.get_parser, 0, "bash")
+--if bash_lang_installed then
+--	require("curl.treesitter").add_treesitter_highlighting()
+--	return
 end
